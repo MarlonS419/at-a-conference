@@ -1,0 +1,3 @@
+.etignore
+node_modules/*
+.vscode
