@@ -5,7 +5,7 @@ import Person from "./Person.js";
 
 let gameCon = new Conference("tableTopGames", 5)
 let person1 = new Person("Marlon","Sanchez","Trugrey@gmail.com")
-let host = new Person("Nick", "Kwiatkowski","@email.com")
+let host = new Person("Nick", "Kwiatkowski","awesomeNick@email.com")
 let dndEvent = new Event("Dnd", host)
 
 
