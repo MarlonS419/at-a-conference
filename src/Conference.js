@@ -40,24 +40,24 @@ class Conference {
       }
     });
   }
-  summery() {
-    let summeryString = "";
-    summeryString += `Welcome to ${this.name}\n\n`;
-    summeryString += `There are this many attendees ${this.attendees.length}\n\n`;
+  summary() {
+    let summaryString = "";
+    summaryString += `Welcome to ${this.name}\n\n`;
+    summaryString += `There are this many attendees ${this.attendees.length}\n\n`;
     this.attendees.forEach((attendee) => {
-      summeryString += `${attendee.firstName} ${attendee.lastName}\n`;
+      summaryString += `${attendee.firstName} ${attendee.lastName}\n`;
     });
-    summeryString += `We have ${this.ConferenceEvents.length} events today\n\n`;
+    summaryString += `We have ${this.ConferenceEvents.length} events today\n\n`;
     this.ConferenceEvents.forEach((events) => {
-      summeryString += `${events.title}\n ${events.facilitator.firstName}\n\n`;
+      summaryString += `${events.title}\n ${events.facilitator.firstName}\n\n`;
     });
     if (this.maximumRegistrants > 0) {
-      summeryString += `The registry is still open for sign ups!`;
+      summaryString += `The registry is still open for sign ups!`;
     } else {
-      summeryString += `Sorry folks we are at capacity!`;
+      summaryString += `Sorry folks we are at capacity!`;
     }
 
-    return summeryString;
+    return summaryString;
   }
 }
 export default Conference;
