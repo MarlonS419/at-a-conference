@@ -1,3 +1,4 @@
 .etignore
 node_modules/*
 .vscode
+at-a-conference.md

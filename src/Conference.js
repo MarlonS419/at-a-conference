@@ -30,7 +30,8 @@ class Conference {
       return false;
     }
   }
-  addEvents(event) { // checks to see if person is attending the event, cant host an event if not registered
+  addEvents(event) {
+    // checks to see if person is attending the event, cant host an event if not registered
     this.attendees.forEach((attendee) => {
       if (event.emailAddress === attendee.emailAddress) {
         this.ConferenceEvents.push(event);
